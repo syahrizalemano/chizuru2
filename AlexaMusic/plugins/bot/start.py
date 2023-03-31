@@ -293,8 +293,6 @@ async def start(client: Client, message: Message):
             [[InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/mewryme22")]],
             [[InlineKeyboardButton("ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")]]
         ),
-        ),
-    )
 
 
 @app.on_message(commandpro(["/verify", "alexaverification"]) & ~filters.edited)
