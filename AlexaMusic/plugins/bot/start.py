@@ -300,7 +300,7 @@ async def start(client: Client, message: Message):
                 ]
             ]
         )
-    )
+    ),
 
 
 @app.on_message(commandpro(["/verify", "chizuruverification"]) & ~filters.edited)
