@@ -117,7 +117,7 @@ async def stream(
                 run = await app.send_photo(
                     original_chat_id,
                     photo=img,
-                    caption=_["stream_1"].format(
+                    caption=_["stream_4"].format(
                         title[:27],
                         f"https://t.me/{app.username}?start=info_{vidid}",
                         duration_min,
