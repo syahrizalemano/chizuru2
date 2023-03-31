@@ -53,8 +53,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/mewryme22"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/amkeenanx"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/mewryme22")
             ]
         )
     else:
