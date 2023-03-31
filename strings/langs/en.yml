@@ -75,7 +75,7 @@ admin_34 : "ғᴀɪʟᴇᴅ ᴛᴏ sᴇᴇᴋ."
 
 # Start
 start_1 : "ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {0}.\n{1} ᴄᴀɴ ɴᴏᴡ ᴩʟᴀʏ sᴏɴɢs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.\n\nғᴏʀ ɢᴇᴛᴛɪɴɢ ᴀɴʏ ᴛʏᴩᴇ ᴏғ ʜᴇʟᴩ ʏᴏᴜ ᴄᴀɴ ᴊᴏɪɴ ᴏᴜʀ sᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴩ."
-start_2 : "<b>Hi, {message.from_user.first_name} is ᴄʜɪᴢᴜʀᴜ\nI Am a Music Group Bot, Which Can Play Songs in Your Group Voice Chat Easily\nI Have Many Features Like :\n\n• Play Music.• Download Songs. • Search for the song you want to play or download.• Use the » /help « command to find out the full features📌 Powered By :\n[ᴋᴇᴇɴᴀɴꜱ](https://t.me/amkeenanx)"
+start_2 : "<b>Hi, {0} is ᴄʜɪᴢᴜʀᴜ\nI Am a Music Group Bot, Which Can Play Songs in Your Group Voice Chat Easily\nI Have Many Features Like :\n\n• Play Music.• Download Songs. • Search for the song you want to play or download.• Use the » /help « command to find out the full features📌 Powered By :\n[ᴋᴇᴇɴᴀɴꜱ](https://t.me/amkeenanx)"
 start_3 : "ʜᴇʏ,\n  ᴛʜɪs ɪs {0}\n\nᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.\n\nᴀssɪsᴛᴀɴᴛ ᴜsᴇʀɴᴀᴍᴇ:- @{1}\nᴀssɪsᴛᴀɴᴛ ɪᴅ:- {2}"
 start_4 : "ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ {0}, [{1}] ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴄʜᴀᴛ."
 start_5 : "ᴛʜᴇ sᴜᴅᴏ ᴜsᴇʀ ᴏғ {0}, [{1}] ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴄʜᴀᴛ."
