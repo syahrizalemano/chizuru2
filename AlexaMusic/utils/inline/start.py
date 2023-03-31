@@ -53,18 +53,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
+                InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/mewryme22"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/amkeenanx"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
+                [InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/mewryme22")]
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
+                [InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/amkeenanx")]
             )
     buttons.append(
         [
@@ -74,25 +74,4 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ]
     )
-    if GITHUB_REPO and OWNER:
-        buttons.append(
-            [
-                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(text=_["S_B_6"], url=f"{GITHUB_REPO}"),
-            ]
-        )
-    else:
-        if GITHUB_REPO:
-            buttons.append(
-                [
-                    InlineKeyboardButton(text=_["S_B_6"], url=f"{GITHUB_REPO}"),
-                ]
-            )
-        if OWNER:
-            buttons.append(
-                [
-                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                ]
-            )
-    buttons.append([InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")])
     return buttons
