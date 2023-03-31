@@ -288,19 +288,18 @@ async def start(client: Client, message: Message):
 "╚█████╔╝██║░░██║██║███████╗╚██████╔╝██║░░██║╚██████╔╝",
 "░╚════╝░╚═╝░░╚═╝╚═╝╚══════╝░╚═════╝░╚═╝░░╚═╝░╚═════╝░",
 "ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ʟɪɢʜᴛᴡᴇɪɢʜᴛ ᴍᴜꜱɪᴄ ʙᴏᴛ, ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ",
-                reply_markup=InlineKeyboardMarkup(
-            [
+reply_markup=InlineKeyboardMarkup(
+           [
                 [
                     InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ", url="https://t.me/mewryme22"
-                    ),
-                    InlineKeyboardButton(
-                        "ᴍᴀɪɴᴛᴀɴᴄᴇ", url="https://t.me/amkeenanx"
-                    )
-                ]
+                        "➕ Add me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                ],[
+                    InlineKeyboardButton("👤 MANAGE", url=f"https://t.me/bcddgblg"),
+                    InlineKeyboardButton("👥 OWNER", url=f"https://t.me/sntaiboss")
+                ],
             ]
         )
-    ),
+    )
 
 
 @app.on_message(commandpro(["/verify", "chizuruverification"]) & ~filters.edited)
@@ -314,16 +313,15 @@ async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://ibb.co/YZpCmfk",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** \n ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴄʜɪᴢᴜʀᴜ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(
-            [
+reply_markup=InlineKeyboardMarkup(
+           [
                 [
                     InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ", url="https://t.me/mewryme22"
-                    ),
-                    InlineKeyboardButton(
-                        "ᴍᴀɪɴᴛᴀɴᴄᴇ", url="https://t.me/amkeenanx"
-                    )
-                ]
+                        "➕ Add me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                ],[
+                    InlineKeyboardButton("👤 MANAGE", url=f"https://t.me/bcddgblg"),
+                    InlineKeyboardButton("👥 OWNER", url=f"https://t.me/sntaiboss")
+                ],
             ]
         )
     )
