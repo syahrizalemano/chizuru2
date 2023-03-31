@@ -289,16 +289,21 @@ async def start(client: Client, message: Message):
 "░╚════╝░╚═╝░░╚═╝╚═╝╚══════╝░╚═════╝░╚═╝░░╚═╝░╚═════╝░",
 "ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ʟɪɢʜᴛᴡᴇɪɢʜᴛ ᴍᴜꜱɪᴄ ʙᴏᴛ, ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ",
                 reply_markup=InlineKeyboardMarkup(
+            [
                 [
-                 
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/mewryme22")],
-                        [InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")
+                    InlineKeyboardButton(
+                        "ᴏᴡɴᴇʀ", url="https://t.me/mewryme22"
+                    ),
+                    InlineKeyboardButton(
+                        "ᴍᴀɪɴᴛᴀɴᴄᴇ", url="https://t.me/amkeenanx"
+                    )
                 ]
-         ),
+            ]
+        )
     )
 
 
-@app.on_message(commandpro(["/verify", "alexaverification"]) & ~filters.edited)
+@app.on_message(commandpro(["/verify", "chizuruverification"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     if await is_served_user(message.from_user.id):
         await message.reply_text(
@@ -310,10 +315,15 @@ async def start(client: Client, message: Message):
         photo=f"https://ibb.co/YZpCmfk",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** \n ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴄʜɪᴢᴜʀᴜ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
+            [
                 [
-                 
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/mewryme22")],
-                        [InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")
+                    InlineKeyboardButton(
+                        "ᴏᴡɴᴇʀ", url="https://t.me/mewryme22"
+                    ),
+                    InlineKeyboardButton(
+                        "ᴍᴀɪɴᴛᴀɴᴄᴇ", url="https://t.me/amkeenanx"
+                    )
                 ]
-         ),
+            ]
+        )
     )
