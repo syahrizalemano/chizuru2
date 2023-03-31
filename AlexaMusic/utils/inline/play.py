@@ -24,32 +24,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="▷",
+                callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/mewryme22"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup {videoid}|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴄʜɪᴢᴜʀᴜ ʜᴏᴍᴇ 💌", url=f"https://t.me/wigglehobbit"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f" ᴍᴀɪɴᴛᴀɴᴄᴇ ",
-                url=f"https://t.me/amkeenanx",
-            )
-        ],
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
     ]
     return buttons
 
@@ -59,24 +39,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="▷",
+                callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/Jankari_Ki_Duniya"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴄʜɪᴢᴜʀᴜ ʜᴏᴍᴇ 💌", url=f"https://t.me/wigglehobbit"),
-        ],
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
     ]
     return buttons
 
@@ -88,18 +56,12 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="▷",
+                callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/Jankari_Ki_Duniya"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx"),
-        ],
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
     ]
     return buttons
 
@@ -237,15 +199,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
 
 def panel_markup_1(_, videoid, chat_id):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
+        
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
