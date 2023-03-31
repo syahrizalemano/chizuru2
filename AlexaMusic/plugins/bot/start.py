@@ -295,7 +295,7 @@ async def start(client: Client, message: Message):
                         [InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")
                     ],
                 ]
-         ),
+         )
 
 
 @app.on_message(commandpro(["/verify", "alexaverification"]) & ~filters.edited)
