@@ -295,7 +295,8 @@ async def start(client: Client, message: Message):
                         [InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")
                     ],
                 ]
-         )
+         ),
+    )
 
 
 @app.on_message(commandpro(["/verify", "alexaverification"]) & ~filters.edited)
@@ -311,10 +312,10 @@ async def start(client: Client, message: Message):
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** \n ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴄʜɪᴢᴜʀᴜ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/mewryme22"),
-                        InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx"),
+                 
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/mewryme22")],
+                        [InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɴᴄᴇ", url=f"https://t.me/amkeenanx")
                     ],
                 ]
-            ),
-         )
+         ),
+    )
