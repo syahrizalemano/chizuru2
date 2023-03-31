@@ -28,14 +28,6 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-def add_corners(im):
-    bigsize = (im.size[0] * 3, im.size[1] * 3)
-    mask = Image.new("L", bigsize, 0)
-    ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=255)
-    mask = mask.resize(im.size, Image.ANTIALIAS)
-    mask = ImageChops.darker(mask, im.split()[-1])
-    im.putalpha(mask)
-
 
 async def gen_thumb(videoid, user_id, theme):
     if os.path.isfile(f"cache/{videoid}_{user_id}.png"):
@@ -95,7 +87,7 @@ async def gen_thumb(videoid, user_id, theme):
         bg = Image.open(f"Backgrounds/{theme}.PNG")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        background = image2.filter(filter=ImageFilter.BoxBlur(0))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
@@ -136,7 +128,7 @@ async def gen_thumb(videoid, user_id, theme):
             text_w, text_h = draw.textsize(f"ᴄʜɪᴢᴜʀᴜ ᴍᴜꜱɪᴄ ɪꜱ ᴘʟᴀʏɪɴɢ", font=font)
             draw.text(
                 ((1280 - text_w) / 2, 30),
-                f"ALEXA MUSIC IS PLAYING OP",
+                f"-",
                 fill="red",
                 font=font,
             )
