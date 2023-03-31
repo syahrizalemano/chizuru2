@@ -17,8 +17,7 @@ selections = [
     "■■■■■■■■■■▢▢",
     "■■■■■■■■■■■▢",
     "■■■■■■■■■■■■",
-    
-]
+    ]
 
 
 ## After Edits with Timer Bar
