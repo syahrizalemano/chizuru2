@@ -280,7 +280,7 @@ async def welcome(client, message: Message):
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://ibb.co/YZpCmfk",
-        caption="ʜᴀʟʟᴏ ɪ'ᴍ 
+        caption="ʜᴀʟʟᴏ ɪ'ᴍ" 
 "░█████╗░██╗░░██╗██╗███████╗██╗░░░██╗██████╗░██╗░░░██╗",
 "██╔══██╗██║░░██║██║╚════██║██║░░░██║██╔══██╗██║░░░██║",
 "██║░░╚═╝███████║██║░░███╔═╝██║░░░██║██████╔╝██║░░░██║",
