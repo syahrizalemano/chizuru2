@@ -280,9 +280,8 @@ async def welcome(client, message: Message):
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://https://ibb.co/YZpCmfk",
-        caption=f"""ᴄʜɪᴢᴜʀᴜ ᴍᴇɴʏᴀʟᴀ🔥""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(" ᴀʟᴇxᴀ ᴄʜᴀᴛ", url=f"https://t.me/Alexa_Help")]]
+            [[InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]]
         ),
     )
 
@@ -298,6 +297,6 @@ async def start(client: Client, message: Message):
         photo=f"https://ibb.co/YZpCmfk",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** \n ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴄʜɪᴢᴜʀᴜ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
  reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 ᴀʟᴇxᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/Alexa_Help")]]
+            [[InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]]
         ),
     )
